@@ -1,7 +1,7 @@
 import { BrowserRouter, NavLink, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { InstrumentListPage } from "./components/InstrumentListPage";
-import InstrumentSinglePage from "./components/InstrumentSinglePage";
+import { InstrumentSinglePage } from "./components/InstrumentSinglePage";
 // import { InstrumentCreatePage } from "./InstrumentCreatePage";
 
 function App() {
