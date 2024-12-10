@@ -3,6 +3,7 @@ import "./App.css";
 import { InstrumentListPage } from "./components/InstrumentListPage";
 import { InstrumentSinglePage } from "./components/InstrumentSinglePage";
 import { InstrumentCreatePage } from "./components/InstrumentCreatePage";
+import { InstrumentUpdatePage } from "./components/InstrumentUpdatePage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/" element={<InstrumentListPage />} />
         {<Route path="/hangszer/:hangszerId" element={<InstrumentSinglePage />} />}
         {<Route path="/uj-hangszer" element={<InstrumentCreatePage />} />}
+        {<Route path="/modositas/:hangszerId" element={<InstrumentUpdatePage />} />}
       </Routes>
     </BrowserRouter>
   );
